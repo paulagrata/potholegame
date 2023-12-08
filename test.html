@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Teko&family=Titillium+Web:wght@900&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/test.css" />
+    <title>pothole game</title>
+  </head>
+
+  <body>
+    <main id="game-container" class="wrapper">
+      <section>
+        <div id="hero">
+          <div class="chrome">VroomVroom</div>
+          <div class="dreams">The Pothole Game</div>
+        </div>
+      </section>
+      <section>
+        <h4 class="hero-text">move arrows to drive<br>key: avoid the potholes</h4>
+        <div id="start-btn">
+          <p class="start-text">difficulty level</p>
+          <div class="difficulty" onclick="startGame('SLOW')">slow</div>
+          <div class="difficulty" onclick="startGame('FAST')">fast</div>
+          <div class="difficulty" onclick="startGame('INSANE')">insane</div>
+        </div>
+      </section>
+      <section>
+        <div id="game-box">
+          <div id="left-btn"></div>
+          <div id="right-btn"></div>
+          <div id="car" class="center"></div>
+          <div id="lanes">
+            <div id="finish-line"></div>
+          </div>
+          <div id="score-box">
+            potholes avoided
+            <br />
+            <span id="score">0</span>
+          </div>
+          <div id="gauge" class="gauge-one"></div>
+          <div id="end-dead">
+            <p class="end-p">um, you may want to get your alignment checked out.</p>
+          </div>
+          <div id="end-finish">
+            <h3 class="finish-h3">star race</h3>
+            <p class="end-p">hehe, complimentary alignment check</p>
+            <h2 class="finish-h2">
+              <strong class="finish-strong">omg, +10% off</strong>
+              <br />
+              if you love, leave a star.
+            </h2>
+            <a href="" class="offer-btn">get this service!!!</a>
+            <p class="offer-disc">
+              present upon arrival. per axle. one per customer. no cash value.
+              mx value $[519]. no further discounts apply. see paula for
+              details. expires 08/31/24.
+            </p>
+          </div>
+          <div id="game-over">
+            <h3 class="finish-h3">game over</h3>
+            <p class="end-p">uhhhh, you have failed.</p>
+            <a href="" class="offer-btn">Get This Service</a>
+            <p class="offer-disc">
+              present upon arrival. per axle. one per customer. no cash value.
+              mx value $[422]. no further discounts apply. see paula for
+              details. expires 08/31/24.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/js/App.js"></script>
+    <script src="/js/TouchController.js"></script>
+    <script src="/js/KeyController.js"></script>
+  </body>
+</html>
